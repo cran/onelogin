@@ -15,12 +15,12 @@ onelogin(region = "US", client_id = Sys.getenv("ONELOGIN_CLIENT_ID"),
 \item{client_secret}{'OneLogin' client secret, defaults to Sys.getenv("ONELOGIN_CLIENT_SECRET")}
 }
 \value{
-a 'OneLogin' connection
+A 'OneLogin' connection
 }
 \description{
 Define a connection to the 'OneLogin' API. Please see the \href{https://developers.onelogin.com/api-docs/1/getting-started/dev-overview}{API documentation}
 for details on using this API and on getting credentials.
 }
 \examples{
-onelogin(region = "US", "client_id", "client_secret")
+if (interactive()) onelogin(region = "US")
 }
